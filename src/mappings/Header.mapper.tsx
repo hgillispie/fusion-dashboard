@@ -1,15 +1,9 @@
-import { figmaMapping, type BaseFigmaProps } from "@builder.io/dev-tools/figma";
+import { figmaMapping } from "@builder.io/dev-tools/figma";
 import { Header } from "@/builder-components";
-
-interface FigmaHeaderProps extends BaseFigmaProps {
-  Description?: boolean;
-  "Action stripe"?: boolean;
-  Type?: "Container" | "Page" | "Page- dark header" | "Section";
-}
 
 figmaMapping({
   componentKey: "91a25ad05e5aca3d4bac93c7c0a6b9baada82170",
-  mapper(figma: FigmaHeaderProps) {
+  mapper(figma) {
     return (
       <Header
         variant={

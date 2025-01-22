@@ -1,14 +1,9 @@
-import { figmaMapping, type BaseFigmaProps } from "@builder.io/dev-tools/figma";
+import { figmaMapping } from "@builder.io/dev-tools/figma";
 import { Table } from "@/builder-components";
-
-interface FigmaTableBaseProps extends BaseFigmaProps {
-  Type?: "Default" | "Empty" | "Loading" | "No match";
-  Footer?: "Off" | "On";
-}
 
 figmaMapping({
   componentKey: "2e67825e412ec1eec8771a747409a24e5a31cc85",
-  mapper(figma: FigmaTableBaseProps) {
+  mapper(figma) {
     return (
       <Table
         columnDefinitions={[

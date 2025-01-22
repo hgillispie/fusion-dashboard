@@ -1,17 +1,9 @@
-import { figmaMapping, type BaseFigmaProps } from "@builder.io/dev-tools/figma";
+import { figmaMapping } from "@builder.io/dev-tools/figma";
 import { Input } from "@/builder-components";
-
-interface FigmaInputProps extends BaseFigmaProps {
-  Type?: "Basic" | "Search" | "Time" | "Numeric";
-  Content?: "None" | "Value" | "Placeholder";
-  State?: "Default" | "Active" | "Disabled" | "Read-only";
-  Invalid?: "Off" | "On";
-  "Visual context"?: "Light" | "Dark";
-}
 
 figmaMapping({
   componentKey: "9f56d1c87573504861f4b69a1a58eb37217270e8",
-  mapper(figma: FigmaInputProps) {
+  mapper(figma) {
     return (
       <Input
         type={

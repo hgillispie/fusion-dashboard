@@ -1,17 +1,9 @@
-import { figmaMapping, type BaseFigmaProps } from "@builder.io/dev-tools/figma";
+import { figmaMapping } from "@builder.io/dev-tools/figma";
 import { AreaChart } from "@/builder-components";
-
-interface FigmaAreaChartProps extends BaseFigmaProps {
-  "Show average line"?: boolean;
-  "Show filter"?: boolean;
-  "Show legends"?: boolean;
-  Type?: "Multiple" | "Default";
-  State?: "Hover" | "Default" | "Active";
-}
 
 figmaMapping({
   componentKey: "866fc404b333d4b5d12734bff13f699b062c5967",
-  mapper(figma: FigmaAreaChartProps) {
+  mapper(figma) {
     return (
       <AreaChart
         series={[

@@ -1,17 +1,9 @@
-import { figmaMapping, type BaseFigmaProps } from "@builder.io/dev-tools/figma";
+import { figmaMapping } from "@builder.io/dev-tools/figma";
 import { BarChart } from "@/builder-components";
-
-interface FigmaBarChartProps extends BaseFigmaProps {
-  "Show Average line"?: boolean;
-  "Show legends"?: boolean;
-  "Show filter"?: boolean;
-  Type?: "Stacked horizontally" | "Single" | "Grouped" | "Stacked vertically";
-  State?: "Default" | "Hover" | "Active";
-}
 
 figmaMapping({
   componentKey: "6723d2c468d81fae60929db2c628c47acc9f1832",
-  mapper(figma: FigmaBarChartProps) {
+  mapper(figma) {
     return (
       <BarChart
         series={[

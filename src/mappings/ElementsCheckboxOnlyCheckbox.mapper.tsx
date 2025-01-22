@@ -1,20 +1,9 @@
-import { figmaMapping, type BaseFigmaProps } from "@builder.io/dev-tools/figma";
+import { figmaMapping } from "@builder.io/dev-tools/figma";
 import { Checkbox } from "@/builder-components";
-
-interface FigmaElementsCheckboxOnlyCheckboxProps extends BaseFigmaProps {
-  State?:
-    | "Default"
-    | "Selected"
-    | "Indeterminate"
-    | "Indeterminate Disabled"
-    | "Disabled"
-    | "Selected disabled";
-  "Visual context"?: "Light" | "Dark";
-}
 
 figmaMapping({
   componentKey: "3df20007f5244f2d1aff2b95444f7c3dfaf6df58",
-  mapper(figma: FigmaElementsCheckboxOnlyCheckboxProps) {
+  mapper(figma) {
     return (
       <Checkbox
         checked={
