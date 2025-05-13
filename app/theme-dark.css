@@ -1,0 +1,105 @@
+/* Dark mode variables and Cloudscape overrides */
+.dark-theme {
+  /* Theme colors */
+  --background: #121212;
+  --foreground: #e0e0e0;
+  --primary: #4cc9f0;
+  --secondary: #4361ee;
+  --accent: #3a86ff;
+  --border: #303030;
+  --card-bg: #1e1e1e;
+}
+
+/* Override Cloudscape components for dark mode */
+.dark-theme .awsui_root_1yjtk_cee99_93 {
+  --color-background-container-content: #121212 !important;
+  --color-background-layout-main: #121212 !important;
+  --color-background-home-header: #242424 !important;
+  --color-text-body-default: #e0e0e0 !important;
+  --color-text-header-default: #f8f8f8 !important;
+  --color-background-dropdown-item-hover: #303030 !important;
+  --color-background-dropdown-item-selected: #383838 !important;
+  --color-border-divider-default: #303030 !important;
+  --color-border-control-default: #505050 !important;
+  --color-text-interactive-default: #4cc9f0 !important;
+  --color-text-link-default: #4cc9f0 !important;
+}
+
+/* Main app layout dark mode */
+.dark-theme main.awsui_layout_hyvsj_t18rz_388,
+.dark-theme div.awsui_content-first-child-main_hyvsj_t18rz_543 {
+  background-color: #121212 !important;
+  color: #e0e0e0 !important;
+}
+
+/* Top navigation dark mode */
+.dark-theme nav[class*="awsui_root"] {
+  background-color: #1a1a1a !important;
+  border-bottom: 1px solid #303030 !important;
+}
+
+/* Side navigation dark mode */
+.dark-theme div[class*="awsui_wrapper"],
+.dark-theme div[class*="awsui_tools-container"] {
+  background-color: #1a1a1a !important;
+  border-right: 1px solid #303030 !important;
+}
+
+/* Tables in dark mode */
+.dark-theme table[class*="awsui_root"],
+.dark-theme thead[class*="awsui_header"],
+.dark-theme tbody[class*="awsui_body"] {
+  background-color: #1e1e1e !important;
+  color: #e0e0e0 !important;
+  border-color: #303030 !important;
+}
+
+.dark-theme tr[class*="awsui_row"],
+.dark-theme td[class*="awsui_cell"] {
+  background-color: #1e1e1e !important;
+  color: #e0e0e0 !important;
+  border-color: #303030 !important;
+}
+
+/* Chart components dark mode */
+.dark-theme div[class*="awsui_root-container"],
+.dark-theme div[class*="awsui_chart-container"] {
+  background-color: #1e1e1e !important;
+  color: #e0e0e0 !important;
+}
+
+/* Button components dark mode */
+.dark-theme button[class*="awsui_button-variant-primary"] {
+  background-color: #4361ee !important;
+}
+
+.dark-theme button[class*="awsui_button-variant-normal"] {
+  background-color: #242424 !important;
+  color: #e0e0e0 !important;
+  border-color: #505050 !important;
+}
+
+/* Input components dark mode */
+.dark-theme input[class*="awsui_input"] {
+  background-color: #242424 !important;
+  color: #e0e0e0 !important;
+  border-color: #505050 !important;
+}
+
+/* Filter components dark mode */
+.dark-theme div[class*="awsui_root-filter"] {
+  background-color: #1e1e1e !important;
+  color: #e0e0e0 !important;
+}
+
+/* Breadcrumbs dark mode */
+.dark-theme div[class*="awsui_breadcrumb-group"] a {
+  color: #4cc9f0 !important;
+}
+
+/* Headers dark mode */
+.dark-theme h1[class*="awsui_heading"],
+.dark-theme h2[class*="awsui_heading"],
+.dark-theme h3[class*="awsui_heading"] {
+  color: #f0f0f0 !important;
+}

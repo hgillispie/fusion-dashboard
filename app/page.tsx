@@ -11,11 +11,13 @@ import { Pagination } from "@/builder-components";
 import { AreaChart } from "@/builder-components";
 import { BarChart } from "@/builder-components";
 import { Table } from "@/builder-components";
+import { ThemeProvider } from "@/components/ThemeContext/ThemeContext";
+import { ThemeToggle } from "@/components/ThemeToggle/ThemeToggle";
 
 export default function Home() {
   return (
-    <div>
-      <div className="bg-white">
+    <ThemeProvider>
+      <div className="bg-background">
         <TopNavigation
           className="bg-slate-900"
           identity={{
@@ -80,6 +82,7 @@ export default function Home() {
             },
           ]}
         />
+        <ThemeToggle />
         <AppLayout
           navigationOpen={false}
           navigation={
@@ -549,6 +552,6 @@ export default function Home() {
           </div>
         </AppLayout>
       </div>
-    </div>
+    </ThemeProvider>
   );
 }

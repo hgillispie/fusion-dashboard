@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Import dark theme styles */
+@import "./theme-dark.css";
+
+:root {
+  /* Light theme variables */
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --primary: #0072bc;
+  --secondary: #3f51b5;
+  --accent: #0054a6;
+  --border: #d1d5db;
+  --card-bg: #f9fafb;
+}
